@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hamburger-line {
+  @apply my-[4px] block h-[2px] w-[20px] bg-white;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply hidden;
+}
+.hamburger-active > span:nth-child(2) {
+  @apply hidden;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply hidden;
+}
+.hamburger-active > span:nth-child(4) {
+  @apply block;
+}
