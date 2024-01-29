@@ -13,7 +13,7 @@
   <body class="overflow-x-hidden">
     <nav
       id="nav-menu"
-      class="w-[70%] h-screen bg-slate-800 fixed -ml-[1000px] transition-all"
+      class="w-[70%] h-screen bg-slate-800 fixed -translate-x-full transition-all"
     >
       <div
         class="rounded-full overflow-hidden h-32 w-32 border-8 border-slate-400 mx-auto mt-12"
@@ -105,12 +105,17 @@
     </nav>
     <main class="">
       <div
-        class="w-10 h-10 absolute right-3 top-3 bg-slate-800 rounded-full flex items-center justify-center cursor-pointer"
+        class="w-10 h-10 right-3 top-3 bg-slate-800 rounded-full flex items-center justify-center cursor-pointer overflow-hidden group hover:bg-sky-400 fixed"
       >
-        <button id="hamburger" name="hamburger" type="button" class="block">
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
+        <button
+          id="hamburger"
+          name="hamburger"
+          type="button"
+          class="block h-full w-full"
+        >
+          <span class="hamburger-line mx-auto"></span>
+          <span class="hamburger-line mx-auto"></span>
+          <span class="hamburger-line mx-auto"></span>
           <span class="hidden text-white font-mono text-2xl">X</span>
         </button>
       </div>
